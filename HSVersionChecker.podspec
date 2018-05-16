@@ -15,7 +15,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/ZYXiao/HSVersionChecker.git", :tag => "1.0.0" }
 
-  s.source_files  = "HSVersionChecker/*"
+  s.source_files  = "HSVersionChecker/include/*.{h}"
+
+  s.vendored_libraries = "HSVersionChecker/libs/libHSVersionChecker.a"
 
   s.frameworks    = 'Foundation', 'UIKit'
 
